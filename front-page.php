@@ -30,6 +30,8 @@
     </div>
 
     <div> 
+    <div class="d-flex">
+        <div class="flex-grow-1">
         <h1 class="p-3">Some text about the company</h1>
         <p class="text-wrap p-3" style="width: 30em;">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum,
@@ -37,8 +39,14 @@
              nulla accusantium autem iste facere, quo eligendi laboriosam sunt?
         </p>
         </div>
+       
+      <div class="text-wrap" style="width: 30em; height: 20em; border: 1px solid black; margin-top: 6em;">
+          This will be an image
+        </div>  
     </div>
     </div>
+    </div>
+    </div> 
  </div>
 
 <?php get_footer(); ?>
