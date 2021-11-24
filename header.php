@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <div class="container-md">
+    <a href="<?php echo home_url('/') ?>"><img src="<?php echo THEME_IMG_PATH . '/toolia.png'; ?>" alt="toolia logo"></a>
+  </div>
   <header class="main-header sticky-top container-md col-12 py-3 mx-1">
     <?php
     wp_nav_menu(
