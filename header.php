@@ -11,11 +11,10 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <ul>
-      <li><a>Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Case</a></li>
-      <li><a>Contact</a></li>
-    </ul>
+  <header class="main-header sticky-top container-md col-12 py-3 mx-1">
+    <?php
+    wp_nav_menu(
+      array('theme_location' => 'primary-menu')
+    )
+    ?>
   </header>
