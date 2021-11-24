@@ -1,34 +1,32 @@
 <?php
-    get_header(); 
+    get_header();
+    $query = new WP_Query( array( 'posts_per_page' => 3, 'category_name' => 'cases'  ) ); 
 ?>
 <div class="container">
     <div class="row g-4">
     <div class="container">
         <div class="row" style="gap: 0.5em;">
-            <div class="col card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <?php 
+    if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+       <div class="col">
+            <div class="card" style="width: 18rem; height: 100%;">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-auto">
+                        <h4 class="card-title pt-2 pb-4"> 
+                            <?php the_title(); ?> 
+                        </h4>
+                        <div class="custom-link card-text">
+                            <?php the_excerpt(); ?>
+                    </div>
+                </div>
+                <a class="btn btn-secondary align-self-end mt-4" href="<?php the_permalink(); ?>">
+                    Full post
+                </a>
                 </div>
             </div>
-            <div class="col card" style="width: 18rem;">
-            <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="col card" style="width: 18rem;">
-            <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
         </div>
-        </div>
-    </div>
-
+    
+    <?php endwhile; else: endif; ?>
     <div> 
     <div class="d-flex">
         <div class="flex-grow-1">
@@ -39,6 +37,7 @@
              nulla accusantium autem iste facere, quo eligendi laboriosam sunt?
         </p>
         </div>
+
        
       <div class="text-wrap" style="width: 30em; height: 20em; border: 1px solid black; margin-top: 6em;">
           This will be an image
