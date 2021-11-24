@@ -26,3 +26,7 @@ if (!function_exists('themeSetup')) :
 
 endif;
 add_action('after_setup_theme', 'themeSetup');
+
+if (!defined('THEME_IMG_PATH')) {
+    define('THEME_IMG_PATH', get_stylesheet_directory_uri() . '/assets');
+}
