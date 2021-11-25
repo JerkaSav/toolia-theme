@@ -66,9 +66,11 @@ Template Name: About
       </svg>
     </div>
   </div>
-  <div></div>
-</div>
+  <div id="main-content" class="container-fluid">
+    <div>Goal</div>
+  </div>
 
-<?php
+  <?php
 get_footer();
 ?>
+</div>

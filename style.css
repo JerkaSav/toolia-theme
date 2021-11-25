@@ -22,9 +22,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
      margin: 0;
      padding: 0;
      background-image: url(./assets/banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -34,9 +34,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     display: flex;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
+    color: #ffffff ;
     flex-direction: column;
 }
+
 h1{
     font-weight: lighter;
     font-size: 3.5rem;
@@ -58,6 +59,11 @@ h4{
 .line{
      font-weight: lighter;
      color: #0feb9e;
+}
+
+#main-content{
+    background: rgb(255, 251, 251);
+    height: 25rem;
 }
 
 
