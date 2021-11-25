@@ -26,12 +26,12 @@
     
         <div class="d-flex mt-5 container">
             <div class="flex-grow-1">
-                <h1 class="ps-5 pt-5 pb-4 h1"><?php echo $title ?></h1>
-                <p class="text-wrap ps-5 ms-1" style="max-width: 40em;">
+                <h1 class="ps-sm-5 pt-sm-5 pb-sm-4 h1"><?php echo $title ?></h1>
+                <p class="text-wrap ps-sm-5 ms-sm-1" style="max-width: 40em;">
                     <?php echo $description ?>
                 </p>
         </div>
-        <div style="width: 30em; height: 20em; margin-top: 5em; margin-bottom: 4rem;">
+        <div class="d-none d-sm-block" style="width: 30em; height: 20em; margin-top: 5em; margin-bottom: 4rem;" >
             <img class="img-fluid rounded shadow" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
         </div> 
         </div>
@@ -42,22 +42,22 @@
                 if ( $query->have_posts() ) : 
                 while( $query->have_posts() ) : $query->the_post(); ?>
                     <div class="col">
-                        <div class="card border-0 h-100 text-white bg-black shadow" style="--bs-bg-opacity: .7;">
+                        <div class="card border-0 h-100 text-white bg-black shadow-sm" style="--bs-bg-opacity: .4;">
                         <?php checkIfPostsHasImage() ?>
                             <div class="card-body d-flex flex-column">
                                 <div class="mb-auto">
                                     <h4 class="card-title pt-2 pb-4 h4"> 
                                         <?php the_title(); ?> 
                                     </h4>
-                                    <div class="card-text">
-                                        <?php the_excerpt(); ?>
-                                    </div>
+                                    <p class="card-text">
+                                        <?php echo get_the_excerpt(); ?>
+                                    </p>
                                 </div>
-                                <a class="btn btn-light mt-auto mb-auto align-self-end shadow" 
+                                <a class="btn btn-light mt-auto mb-auto align-self-end" 
                                 role="button" 
                                 href="<?php the_permalink(); ?>"
                                 >
-                                    Full post
+                                    To Case
                                 </a>
                             </div>
                         </div>
