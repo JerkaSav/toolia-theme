@@ -23,8 +23,18 @@
         }
     }
 ?>
-<div class="container">
-    <div class="row g-4 mt-5">
+    
+        <div class="d-flex mt-5 container">
+            <div class="flex-grow-1">
+                <h1 class="ps-5 pt-5 pb-4 h1"><?php echo $title ?></h1>
+                <p class="text-wrap ps-5 ms-1" style="max-width: 40em;">
+                    <?php echo $description ?>
+                </p>
+        </div>
+        <div style="width: 30em; height: 20em; margin-top: 5em; margin-bottom: 4rem;">
+            <img class="img-fluid rounded" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
+        </div> 
+        </div>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php 
@@ -36,10 +46,10 @@
                         <?php checkIfPostsHasImage() ?>
                             <div class="card-body d-flex flex-column">
                                 <div class="mb-auto">
-                                    <h4 class="card-title pt-2 pb-4"> 
+                                    <h4 class="card-title pt-2 pb-4 h4"> 
                                         <?php the_title(); ?> 
                                     </h4>
-                                    <div class="custom-link card-text">
+                                    <div class="card-text">
                                         <?php the_excerpt(); ?>
                                     </div>
                                 </div>
@@ -56,20 +66,9 @@
                 <?php endwhile; else: endif; ?>
                  </div>
                  </div> 
-        <div class="d-flex mt-5">
-            <div class="flex-grow-1">
-                <h1 class="p-3"><?php echo $title ?></h1>
-                <p class="text-wrap p-3" style="width: 30em;">
-                    <?php echo $description ?>
-                </p>
-        </div>
-      
-        <div style="width: 30em; height: 20em; margin-top: 6em; margin-bottom: 6rem;">
-            <img class="img-fluid rounded" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
-        </div>  
-    </div>
-   
+        
+ 
 
-</div>
+
 
 <?php get_footer(); ?>
