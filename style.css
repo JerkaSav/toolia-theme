@@ -97,4 +97,9 @@ a {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    margin-bottom: 0;
+}
+
+#menu-primary-menu > li > a {
+    color: black;
 }
