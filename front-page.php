@@ -42,7 +42,7 @@
                 if ( $query->have_posts() ) : 
                 while( $query->have_posts() ) : $query->the_post(); ?>
                     <div class="col">
-                        <div class="card h-100 text-white bg-black shadow" style="--bs-bg-opacity: .7; border: none;">
+                        <div class="card border-0 h-100 text-white bg-black shadow" style="--bs-bg-opacity: .7;">
                         <?php checkIfPostsHasImage() ?>
                             <div class="card-body d-flex flex-column">
                                 <div class="mb-auto">
