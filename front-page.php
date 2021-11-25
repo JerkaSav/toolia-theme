@@ -32,7 +32,7 @@
                 </p>
         </div>
         <div style="width: 30em; height: 20em; margin-top: 5em; margin-bottom: 4rem;">
-            <img class="img-fluid rounded" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
+            <img class="img-fluid rounded shadow" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
         </div> 
         </div>
         <div class="container">
@@ -42,7 +42,7 @@
                 if ( $query->have_posts() ) : 
                 while( $query->have_posts() ) : $query->the_post(); ?>
                     <div class="col">
-                        <div class="card h-100 text-white bg-black">
+                        <div class="card h-100 text-white bg-black shadow" style="--bs-bg-opacity: .7; border: none;">
                         <?php checkIfPostsHasImage() ?>
                             <div class="card-body d-flex flex-column">
                                 <div class="mb-auto">
