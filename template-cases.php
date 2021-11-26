@@ -6,13 +6,13 @@ get_header();
 ?>
 
 
-<section class="container row justify-content-around">
+<section class="container">
 
-  <h1 class="display-2 text-center">
+  <h1 class="display-2 text-center mt-5">
     <?php the_title() ?>
   </h1>
 
-  <p><?php get_template_part('/includes/sections', 'content'); ?></p>
+  <p class="mb-8"><?php get_template_part('/includes/sections', 'content'); ?></p>
 
 
   <?php
@@ -24,18 +24,25 @@ get_header();
 
 
 
-    <!-- the loop -->
-    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
-          <h5 class="card-title"><?php the_title(); ?> </h5>
 
-          <p class="card-text"><?php the_excerpt(); ?></p>
-          <a href="<?php echo the_permalink(); ?>" class="card-link"><?php the_title(); ?></a>
+    <!-- the loop -->
+
+    <div class="row justify-content-around mt-6">
+      <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
+            <h5 class="card-title"><?php the_title(); ?> </h5>
+
+            <p class="card-text"><?php the_excerpt(); ?></p>
+            <a href="<?php echo the_permalink(); ?>" class="card-link"><?php the_title(); ?></a>
+          </div>
         </div>
-      </div>
-    <?php endwhile; ?>
+
+      <?php endwhile; ?>
+    </div>
+
     <!-- end of the loop -->
 
     <!-- pagination here -->
