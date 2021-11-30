@@ -67,7 +67,238 @@ Template Name: About
     </div>
   </div>
   <div id="main-content" class="container-fluid">
-    <div>Goal</div>
+    <h1>About Us</h1>
+
+    <div class="main-description">
+      <p class="desc-text">
+        survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the
+        1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+
+    <div class="section-work">
+      <div>
+        <h3>Development</h3>
+
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="currentColor"
+            class="bi bi-code-slash"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+            />
+          </svg>
+
+          <p class="card-desc">
+            1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <button type="button" id="btn-info" class="btn btn-info">Info</button>
+        </div>
+      </div>
+      <div>
+        <h3>Branding</h3>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="currentColor"
+            class="bi bi-meta"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"
+            />
+          </svg>
+          <p class="card-desc">
+            1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <button type="button" id="btn-info" class="btn btn-info">Info</button>
+        </div>
+      </div>
+      <div>
+        <h3>Consultning</h3>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="currentColor"
+            class="bi bi-megaphone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"
+            />
+          </svg>
+          <p class="card-desc">
+            1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <button type="button" id="btn-info" class="btn btn-info">Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <h2>MEET OUR TEAM</h2>
+    <p>
+      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker
+      including versions of Lorem Ipsum.
+    </p>
+    <div class="team-toolia">
+      <div class="profile-user">
+        <div id="user-img">
+          <img
+            src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+            alt="toolia logo"
+          />
+        </div>
+        <h4>Thomas</h4>
+        <details>
+          <summary>Frontend Developer</summary>
+          passages, and more recently with desktop publishing software like
+        </details>
+      </div>
+      <div class="profile-user">
+        <div id="user-img">
+          <img
+            src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+            alt="toolia logo"
+          />
+        </div>
+        <h4>Eric</h4>
+        <details>
+          <summary>Frontend Developer</summary>
+          passages, and more recently with desktop publishing software like
+        </details>
+      </div>
+      <div class="profile-user">
+        <div id="user-img">
+          <img
+            src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+            alt="toolia logo"
+          />
+        </div>
+        <h4>Ann</h4>
+        <details>
+          <summary>Frontend Developer</summary>
+          passages, and more recently with desktop publishing software like
+        </details>
+      </div>
+      <div class="profile-user">
+        <div id="user-img">
+          <img
+            src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+            alt="toolia logo"
+          />
+        </div>
+        <h4>MohammadAli</h4>
+        <details>
+          <summary>Frontend Developer</summary>
+          passages, and more recently with desktop publishing software like
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="m1">
+      <h1>Get in Touch</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+              <h2 class="mb-5">
+                Fill the form. <br />
+                It's easy.
+              </h2>
+              <form class="row g-3" action="index.php" method="POST">
+                <div class="col-md-4">
+                  <label for="validationServer01" class="form-label"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="FirstName"
+                    name="FirstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer02" class="form-label"
+                    >Last name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="LastName"
+                    name="LastName"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-8">
+                  <label for="validationCustomEmail" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Email"
+                    name="Email"
+                    aria-describedby="validationServer03Feedback"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-8">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 150px"
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit" name="submit">
+                    Submit form
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <h3 class="mb-4">Let's talk about everything.</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+                deleniti itaque similique magni. Magni, laboriosam perferendis
+                maxime!
+              </p>
+              <p><a href="#">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <?php
