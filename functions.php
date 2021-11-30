@@ -30,3 +30,12 @@ add_action('after_setup_theme', 'themeSetup');
 if (!defined('THEME_IMG_PATH')) {
     define('THEME_IMG_PATH', get_stylesheet_directory_uri() . '/assets');
 }
+
+function add_search_box($items, $args)
+{
+    $items .= '<li>' . get_search_form(false) . '</li>';
+    return $items;
+}
+
+
+add_filter('wp_nav_menu_items', 'add_search_box', 10, 2);

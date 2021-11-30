@@ -15,10 +15,12 @@ $the_query = new WP_Query($args);
 
     <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <div class="post-excerpt container-md mb-3">
+                <hr>
                 <h2><?php the_title(); ?></h2>
                 <?php the_post_thumbnail('thumbnail'); ?>
                 <p><?php the_excerpt(); ?></p>
                 <a href="<?php echo the_permalink(); ?>">Read more</a>
+
             </div>
 
         <?php endwhile;
