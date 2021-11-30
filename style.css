@@ -107,7 +107,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     justify-content: space-around;
 }
 
-.card:not(.fp-card) {
+.card:not(.fp-card, .post-excerpt) {
     height: 20rem;
     width: 15rem;
     border-radius: 1rem;
