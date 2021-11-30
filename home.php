@@ -9,18 +9,18 @@ $args = array(
 $the_query = new WP_Query($args);
 ?>
 
-<div class="container-md bg-white py-3 col-10 my-3 rounded">
-    <h1 class="text-center">Blog</h1>
+<div class="container-md">
+    <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5">Blog</h1>
 
 
     <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <div class="post-excerpt container-md mb-3">
-                <hr>
-                <h2><?php the_title(); ?></h2>
-                <?php the_post_thumbnail('thumbnail'); ?>
-                <p><?php the_excerpt(); ?></p>
-                <a href="<?php echo the_permalink(); ?>">Read more</a>
+            <div class="post-excerpt card mb-3">
+                <div class="card-body">
+                    <h1 class="card-title blog-post-title"><a href="<?php echo the_permalink(); ?>"><?php the_title() ?> </a></h1>
+                    <?php the_post_thumbnail('thumbnail'); ?>
+                    <p><?php the_excerpt(); ?></p>
 
+                </div>
             </div>
 
         <?php endwhile;
