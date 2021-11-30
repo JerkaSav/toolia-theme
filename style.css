@@ -63,6 +63,52 @@ h4 {
 #main-content {
   background: rgb(255, 251, 251);
   height: 25rem;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 3.5rem;
+}
+span {
+    font-weight: 800;
+}
+.never {
+    font-weight: lighter;
+    color: #0feb9e;
+}
+h2 {
+    font-size: 2rem;
+}
+h4 {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+.line {
+    font-weight: lighter;
+    color: #0feb9e;
+}
+
+#main-content {
+    background: rgb(255, 251, 251);
+    height: 25rem;
 }
 
 /* CSS reset */
@@ -172,4 +218,16 @@ a {
     rgba(15, 235, 158, 0.2) 0%,
     rgba(15, 235, 158, 0.4) 100%
   );
+}
+.toolia-logo {
+    width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    #menu-primary-menu {
+        flex-direction: column;
+    }
+    .toolia-logo {
+        width: 75%;
+    }
 }
