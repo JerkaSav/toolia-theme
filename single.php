@@ -2,7 +2,7 @@
 
 <div class="container">
     <h1><?php the_title(); ?></h1>
-    <p><?php the_content(); ?> </p>
+    <p><?php get_template_part('/includes/sections', 'content'); ?> </p>
 </div>
 
 <?php if (comments_open() || get_comments_number()) : comments_template() ?>
