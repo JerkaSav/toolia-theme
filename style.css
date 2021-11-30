@@ -15,6 +15,202 @@ Text Domain: TooliaTheme
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+#about-page {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-content {
+  background: #fffbfb;
+  height: 40rem;
+  text-align: center;
+}
+
+#main-content h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+}
+
+#main-content span {
+  font-weight: 800;
+}
+
+#main-content .never {
+  font-weight: lighter;
+  color: #0feb9e;
+}
+
+#main-content h2 {
+  font-size: 2rem;
+}
+
+#main-content h4 {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+#main-content .line {
+  font-weight: lighter;
+  color: #424d49;
+}
+
+.main-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.desc-text {
+  width: 60%;
+}
+
+.section-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  height: 20rem;
+  width: 15rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-desc {
+  padding-top: 1rem;
+  width: 90%;
+}
+
+#btn-info {
+  width: 80%;
+}
+
+.team {
+  text-align: center;
+  height: 40rem;
+  background: #fffbfb;
+}
+
+.team .team-toolia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team .team-toolia .profile-user {
+  margin: 3rem;
+  width: 15rem;
+  height: 20rem;
+  background: #ccffed;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #dfdfdf;
+  padding-top: 1rem;
+}
+
+.team .team-toolia .profile-user #user-img {
+  background: #dcdcdc;
+  height: 10rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.team .team-toolia .profile-user #user-img img {
+  width: 7rem;
+  height: 7rem;
+  opacity: 0.4;
+}
+
+.team .team-toolia .profile-user h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  background: #fffbfb;
+}
+
+.content .m1 {
+  width: 100%;
+  text-align: center;
+}
+
+.content form {
+  width: 35rem;
+  border-right: 1px solid #000;
+}
 
 #about-page {
   height: 100vh;
@@ -115,8 +311,11 @@ h4 {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-bodisx;
+          box-sizing: border-bodisx;
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
@@ -127,7 +326,6 @@ img {
 }
 
 /* Anchor links */
-
 a {
   text-decoration: none;
 }
@@ -138,6 +336,12 @@ a {
 }
 
 #menu-primary-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -296,3 +500,4 @@ a {
     width: 75%;
   }
 }
+/*# sourceMappingURL=style.css.map */
