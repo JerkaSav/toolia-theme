@@ -39,3 +39,11 @@ function add_search_box($items, $args)
 
 
 add_filter('wp_nav_menu_items', 'add_search_box', 10, 2);
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more)
+{
+    global $post;
+    return '<a class="moretag" href="' . get_permalink($post->ID) . '"> Read the full article...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
