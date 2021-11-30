@@ -33,16 +33,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #ffffff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #main-content {
@@ -84,11 +84,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.5rem;
 }
 
@@ -101,13 +101,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
-.card {
+.card:not(.fp-card) {
   height: 20rem;
   width: 15rem;
   border-radius: 1rem;
@@ -115,12 +115,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .card-desc {
@@ -143,11 +143,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .team .team-toolia .profile-user {
@@ -160,12 +160,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 1px solid #dfdfdf;
   padding-top: 1rem;
 }
@@ -178,11 +178,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 50%;
 }
 
@@ -312,7 +312,7 @@ h4 {
 *::before,
 *::after {
   -webkit-box-sizing: border-bodisx;
-          box-sizing: border-bodisx;
+  box-sizing: border-bodisx;
   box-sizing: border-box;
 }
 
@@ -341,7 +341,7 @@ a {
   display: flex;
   list-style-type: none;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
