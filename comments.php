@@ -3,11 +3,9 @@
 $id = get_the_ID();
 $args = array(
     'status' => 'approve',
+    'include_unapproved' => array(is_user_logged_in() ? get_current_user_id() : wp_get_unapproved_comment_author_email()),
     'comment_notes_after' => '',
-    'title_reply' => 'Have something to say?',
     'post__in' => $id, //Retrieves comments for an array of posts
-    'post_id' => $post_ID, // Post's ID you can make sure only comments related to that post appear.
-    'category__not_in' => 'cases'
 );
 
 // The comment query

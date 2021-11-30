@@ -319,7 +319,9 @@ h4 {
 * {
     margin: 0;
 }
-
+input {
+    border: 0;
+}
 /* Images */
 img {
     display: block;
@@ -346,10 +348,12 @@ a {
     list-style-type: none;
     justify-content: space-around;
     margin-bottom: 0;
+    align-items: center;
 }
 
 #menu-primary-menu > li > a {
     color: black;
+    font-weight: 200;
 }
 .toolia-logo {
     width: 25%;
@@ -369,26 +373,66 @@ a {
     color: rgba(8, 133, 89, 0.87);
 }
 .blog-post-title > a:hover {
-    color: #0a58ca;
+    color: #0acab0;
 }
 .moretag {
     font-style: italic;
-    color: rgba(5, 80, 54, 0.685);
+    color: rgba(8, 133, 89, 0.87);
 }
 
 /* Comments */
-.comments-title {
-    font-weight: lighter;
-}
+.comments-title,
 .comment-reply-title {
     font-weight: lighter;
 }
-.comment-header > span {
+
+.comment-header > span,
+.says {
     font-weight: 600;
 }
 .comment-form-comment > label {
     display: block;
 }
+.fn > a,
+.comment-reply-link,
+.reply-title > a {
+    color: rgba(8, 133, 89, 0.87);
+}
+.fn > a:hover,
+.comment-meta:hover,
+.reply-title > a:hover,
+.logged-in-as > a {
+    color: #0acab0;
+}
+.comment-meta > a,
+.logged-in-as > a {
+    color: rgba(55, 92, 79, 0.87);
+    font-size: 0.75rem;
+}
+.form-submit > .submit {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.13);
+}
+.form-submit > .submit:hover {
+    background-color: #0acab054;
+}
+.form-submit > .submit:active {
+    background-color: #0acab086;
+    box-shadow: none;
+}
+#comment {
+    border-color: rgb(168, 168, 168);
+    border-radius: 5px;
+}
+
+.search-bar::placeholder {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+/* Front page */
 .fp-h-top {
     animation: fade-in-no-bg 1s ease-in-out, no-bg 2s ease-in-out;
 }

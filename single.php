@@ -20,16 +20,16 @@
         <ol class="comment-list">
             <?php
             wp_list_comments(array(
-                'style'       => 'ol',
+                'style'       => 'div',
                 'short_ping'  => true,
-                'avatar_size' => 74,
+                'avatar_size' => 54,
             ));
             ?>
         </ol>
     </div>
 <?php endif; ?>
 <div class="container col-10">
-    <?php comment_form(); ?>
+    <?php comment_form($args = array('title_reply' => 'Leave a comment')); ?>
 </div>
 
 
