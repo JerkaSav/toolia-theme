@@ -1,14 +1,21 @@
 <?php get_header() ?>
+<?php $author_id = get_post_field('post_author')  ?>
 
 <div class="container col-10">
     <div class="breadcrumb mt-5">
         <?php get_breadcrumb() ?>
     </div>
     <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5"><?php the_title(); ?></h1>
+    <p class="author-details text-muted">
+        <em>by</em>
+        <span class="text-uppercase author-meta-span"><?php the_author_meta('display_name', $author_id); ?></span>
+        <em>on</em>
+        <span class="author-meta-span"><?php echo get_the_date() ?></span>
+    </p>
     <div class="blog-post-img-wrapper">
         <?php the_post_thumbnail('medium'); ?>
-
     </div>
+
     <p><?php get_template_part('/includes/sections', 'content'); ?> </p>
 </div>
 
