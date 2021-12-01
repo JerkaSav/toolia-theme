@@ -48,3 +48,28 @@ function new_excerpt_more($more)
     return '<a class="moretag" href="' . get_permalink($post->ID) . '"> Read the full article...</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Get breadcrumb menu on post (single) pages
+function get_breadcrumb()
+{
+    echo '<a href="' . home_url() . '" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        echo "<span class='crumb-separator'>&nbsp;&#187;&nbsp;</span>";
+        echo the_category('<span class="crumb-separator"> &nbsp; // &nbsp; </span>');
+        if (is_single()) {
+            echo "<span class='crumb-separator'>&nbsp;&#187;&nbsp;</span>";
+            the_title("<span class='text-muted crumb-title'>", "</span>");
+        }
+        // Uncomment the code below if you want to call get_breadcrumb() on pages (About, Contact etc.) also.
+
+        // elseif (is_page()) {
+        //     echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        //     echo the_title();
+        // } elseif (is_search()) {
+        //     echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        //     echo '"<em>';
+        //     echo the_search_query();
+        //     echo '</em>"';
+        // }
+    }
+}
