@@ -31,6 +31,7 @@ if (!defined('THEME_IMG_PATH')) {
     define('THEME_IMG_PATH', get_stylesheet_directory_uri() . '/assets');
 }
 
+// Adds search box to nav menu programatically
 function add_search_box($items, $args)
 {
     $items .= '<li>' . get_search_form(false) . '</li>';
