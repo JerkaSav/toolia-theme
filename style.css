@@ -237,7 +237,7 @@ h1 {
     font-weight: lighter;
     font-size: 3.5rem;
 }
-span {
+span:not(.crumb-separator, .crumb-title) {
     font-weight: 800;
 }
 .never {
@@ -283,9 +283,7 @@ h1 {
     font-weight: lighter;
     font-size: 3.5rem;
 }
-span {
-    font-weight: 800;
-}
+
 .never {
     font-weight: lighter;
     color: #0feb9e;
@@ -430,6 +428,21 @@ a {
 .search-bar::placeholder {
     font-weight: 300;
     font-size: 0.75rem;
+}
+
+/* Breadcrumbs */
+.breadcrumb > a {
+    color: rgba(55, 92, 79, 0.87);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+.breadcrumb > a:hover {
+    color: rgba(55, 92, 79, 0.87);
+    color: #0acab0;
+}
+.crumb-separator,
+.crumb-title {
+    font-size: 0.8rem;
 }
 
 /* Front page */
