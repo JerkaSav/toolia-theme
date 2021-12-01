@@ -237,7 +237,7 @@ h1 {
     font-weight: lighter;
     font-size: 3.5rem;
 }
-span:not(.crumb-separator, .crumb-title) {
+span:not(.crumb-separator, .crumb-title, #email-notes, .required, .author-meta-span) {
     font-weight: 800;
 }
 .never {
@@ -420,8 +420,13 @@ a {
     border-color: #6c757d;
     transition: background-color 0.25s ease;
 }
+
+#author,
+#id,
+#url,
+#email,
 #comment {
-    border-color: rgb(168, 168, 168);
+    border: 1px solid rgb(168, 168, 168);
     border-radius: 5px;
 }
 
@@ -441,7 +446,8 @@ a {
     color: #0acab0;
 }
 .crumb-separator,
-.crumb-title {
+.crumb-title,
+.author-details {
     font-size: 0.8rem;
 }
 
