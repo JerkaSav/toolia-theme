@@ -15,7 +15,6 @@ $case_author = get_field('case_author');
 <section class="container">
 
   <?php if ($title) : ?>
-
     <h1 class="display-2 text-center mt-5"><?php echo $title; ?></h1>
   <?php else : ?>
     <h1 class="display-2 text-center mt-5">Uppdrag vi har gjort</h1>
@@ -24,7 +23,6 @@ $case_author = get_field('case_author');
 
 
   <div class="mx-auto" style="max-width: 40rem;">
-
     <p class="mb-5"><?php get_template_part('/includes/sections', 'content'); ?></p>
   </div>
 
