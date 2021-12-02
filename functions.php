@@ -108,7 +108,7 @@ function toolia_register_post_type()
             'thumbnail',
             'page-attributes'
         ),
-        'taxonomies' => 'category',
+        'taxonomies' => array('category'),
         'rewrite'   => array('slug' => 'job'),
         'show_in_rest' => true
     );
