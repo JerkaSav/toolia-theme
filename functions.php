@@ -31,6 +31,8 @@ if (!defined('THEME_IMG_PATH')) {
     define('THEME_IMG_PATH', get_stylesheet_directory_uri() . '/assets');
 }
 
+
+
 // Adds search box to nav menu programatically
 function add_search_box($items, $args)
 {
@@ -73,3 +75,40 @@ function get_breadcrumb()
         // }
     }
 }
+
+function toolia_register_post_type()
+{
+    $labels = array(
+        'name' => __('Jobs', 'toolia'),
+        'singular_name' => __('Job', 'toolia'),
+        'add_new' => __('New Job', 'toolia'),
+        'add_new_item' => __('Add New Job', 'toolia'),
+        'edit_item' => __('Edit Job', 'toolia'),
+        'new_item' => __('New Job', 'toolia'),
+        'view_item' => __('View Jobs', 'toolia'),
+        'search_items' => __('Search Jobs', 'toolia'),
+        'not_found' =>  __('No Jobs Found', 'toolia'),
+        'not_found_in_trash' => __('No jobs found in Trash', 'toolia'),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'has_archive' => true,
+        'public' => true,
+        'hierarchical' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'custom-fields',
+            'thumbnail',
+            'page-attributes'
+        ),
+        'taxonomies' => 'category',
+        'rewrite'   => array('slug' => 'job'),
+        'show_in_rest' => true
+    );
+
+    register_post_type('job', $args);
+}
+add_action('init', 'toolia_register_post_type');
