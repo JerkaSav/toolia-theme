@@ -20,7 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(./assets/banner.jpg);
+  background-image: url(./assets/work.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #main {
   width: 100%;
-  height: 100vh;
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,41 +45,45 @@ Use it to make something cool, have fun, and share what you've learned with othe
           flex-direction: column;
 }
 
+#main h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+}
+
+#main span {
+  font-weight: 800;
+}
+
+#main .never {
+  font-weight: lighter;
+  color: #0feb9e;
+}
+
+#main .line {
+  font-weight: lighter;
+  color: #0feb9e;
+}
+
+#main h2 {
+  font-size: 2rem;
+}
+
+#main h4 {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
 #main-content {
-  background: #fffbfb;
+  background: #ffffff;
   height: 40rem;
   text-align: center;
 }
 
 #main-content h1 {
-  font-weight: lighter;
-  font-size: 3.5rem;
+  padding-top: 2rem;
 }
 
-#main-content span {
-  font-weight: 800;
-}
-
-#main-content .never {
-  font-weight: lighter;
-  color: #0feb9e;
-}
-
-#main-content h2 {
-  font-size: 2rem;
-}
-
-#main-content h4 {
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
-#main-content .line {
-  font-weight: lighter;
-  color: #424d49;
-}
-
-.main-description {
+#main-content .main-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,11 +93,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
-.desc-text {
-  width: 60%;
+#main-content .main-description .desc-text {
+  width: 50%;
 }
 
 .section-work {
@@ -107,9 +111,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
       justify-content: space-around;
 }
 
-.card {
+.section-work h3 {
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.section-work .card {
   height: 20rem;
-  width: 15rem;
+  width: 25rem;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,22 +132,49 @@ Use it to make something cool, have fun, and share what you've learned with othe
           flex-direction: column;
 }
 
-.card-desc {
+.section-work .card .card-desc {
   padding-top: 1rem;
   width: 90%;
 }
 
-#btn-info {
+.section-work .card #btn-info {
   width: 80%;
 }
 
-.team {
+/* #our-words {
+  height: 30rem;
+  background: #0feb9e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > div {
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./assets/toolia.png);
+  }
+} */
+#team {
   text-align: center;
-  height: 40rem;
-  background: #fffbfb;
+  height: 35rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.team .team-toolia {
+#team .team-toolia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,9 +184,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80%;
+  max-width: 1320px;
 }
 
-.team .team-toolia .profile-user {
+#team .team-toolia .profile-user {
   margin: 3rem;
   width: 15rem;
   height: 20rem;
@@ -170,7 +208,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding-top: 1rem;
 }
 
-.team .team-toolia .profile-user #user-img {
+#team .team-toolia .profile-user #user-img {
   background: #dcdcdc;
   height: 10rem;
   width: 10rem;
@@ -186,125 +224,53 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-radius: 50%;
 }
 
-.team .team-toolia .profile-user #user-img img {
+#team .team-toolia .profile-user #user-img img {
   width: 7rem;
   height: 7rem;
   opacity: 0.4;
 }
 
-.team .team-toolia .profile-user h4 {
+#team .team-toolia .profile-user h4 {
   font-size: 1.5rem;
   font-weight: 400;
   font-style: normal;
 }
 
-.content {
-  background: #fffbfb;
-}
-
-.content .m1 {
+#content .m1 {
   width: 100%;
   text-align: center;
 }
 
-.content form {
+#content form {
   width: 35rem;
-  border-right: 1px solid #000;
+  border-right: 1px solid #ced4da;
 }
 
-#about-page {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url(./assets/banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#content form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  border-bottom: 1px solid #ced4da;
+  background: #e8fff7;
 }
 
-#main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  flex-direction: column;
+#content form textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0.5;
+  border-bottom: 1px solid #ced4da;
+  background: #e8fff7;
 }
 
-h1 {
-  font-weight: lighter;
-  font-size: 3.5rem;
-}
-span {
-  font-weight: 800;
-}
-.never {
-  font-weight: lighter;
-  color: #0feb9e;
-}
-h2 {
-  font-size: 2rem;
-}
-h4 {
-  font-weight: lighter;
-  font-size: 1rem;
-}
-.line {
-  font-weight: lighter;
-  color: #0feb9e;
+#content form button {
+  background: #0feb9e;
+  border: none;
 }
 
-#main-content {
-  background: rgb(255, 251, 251);
-  height: 25rem;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(./assets/banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    flex-direction: column;
-}
-
-h1 {
-    font-weight: lighter;
-    font-size: 3.5rem;
-}
-span {
-    font-weight: 800;
-}
-.never {
-    font-weight: lighter;
-    color: #0feb9e;
-}
-h2 {
-    font-size: 2rem;
-}
-h4 {
-    font-weight: lighter;
-    font-size: 1rem;
-}
-.line {
-    font-weight: lighter;
-    color: #0feb9e;
-}
-
-#main-content {
-    background: rgb(255, 251, 251);
-    height: 25rem;
+#content form button:hover {
+  background: #09caf1;
 }
 
 /* CSS reset */
@@ -313,7 +279,6 @@ h4 {
 *::after {
   -webkit-box-sizing: border-bodisx;
           box-sizing: border-bodisx;
-  box-sizing: border-box;
 }
 
 * {
@@ -342,97 +307,10 @@ a {
   list-style-type: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
   margin-bottom: 0;
 }
 
 #menu-primary-menu > li > a {
   color: black;
-}
-
-.fp-h-b {
-  background: linear-gradient(
-    0.25turn,
-    rgba(15, 235, 158, 0.4),
-    transparent 30%
-  );
-}
-.fp-p-style::first-letter {
-  font-size: 1.5rem;
-  font-style: italic;
-}
-.fp-p-style {
-  position: relative;
-}
-.fp-p-style::before {
-  content: "";
-  position: absolute;
-  height: 110%;
-  width: 1px;
-  left: 20px;
-  top: 2px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.fp-card {
-  border: none;
-  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-  overflow: hidden;
-  border-radius: 20px;
-  min-height: 450px;
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-}
-.card-has-bg {
-  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.card-has-bg:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.card-has-bg:hover {
-  transform: scale(0.98);
-  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-  color: white;
-}
-.card-has-bg:hover > .card-body > h4 > .text-black {
-  color: white;
-}
-.card-has-bg:hover > .card-img-overlay {
-  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
-  background: rgba(15, 235, 158, 0.4);
-  background: linear-gradient(
-    0deg,
-    rgba(15, 235, 158, 0.2) 0%,
-    rgba(15, 235, 158, 0.4) 100%
-  );
-}
-.toolia-logo {
-    width: 25%;
-}
-
-@media screen and (max-width: 768px) {
-    #menu-primary-menu {
-        flex-direction: column;
-    }
-    .toolia-logo {
-        width: 75%;
-    }
 }
 /*# sourceMappingURL=style.css.map */

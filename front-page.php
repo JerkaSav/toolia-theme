@@ -24,7 +24,7 @@
         <div class="d-none d-sm-block" style="width: 30em; height: 20em; margin-top: 15rem; margin-bottom: 4rem;" >
             <img class="img-fluid rounded-3 shadow" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
         </div> 
-        </div>
+        </div>  
         <div class="container mt-5">
             <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b">Cases</h1>
             <div class="row mt-5 mb-5">

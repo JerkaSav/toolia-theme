@@ -7,6 +7,21 @@ Template Name: About
 <!-- <h1><?php the_title();?></h1>
 <?php the_content(); ?>
  -->
+
+ <?php
+  if ( have_posts() ) :
+	while ( have_posts() ) : the_post();
+		the_title( '<h2>', '</h2>' );
+		the_post_thumbnail();
+		the_excerpt();
+		?>
+<a href="<?php echo the_permalink(); ?>">Link to Post</a> <?php
+
+	endwhile;
+else:
+	_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+endif;
+ ?>
 <div id="about-page">
   <div id="main">
     <h1>Meet <span>Toolia!</span></h1>
@@ -79,10 +94,11 @@ Template Name: About
       </p>
     </div>
 
+  <!--  -->
+
     <div class="section-work">
       <div>
-        <h3>Development</h3>
-
+        <h3>Development</h3>    
         <div class="card">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +118,9 @@ Template Name: About
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <button type="button" id="btn-info" class="btn btn-info">Info</button>
+            <button type="button" id="btn-info" class="btn btn-info"><a href="http://localhost/toolia/develop/">Info</a></button>
+
+          
         </div>
       </div>
       <div>
@@ -126,7 +144,7 @@ Template Name: About
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <button type="button" id="btn-info" class="btn btn-info">Info</button>
+          <button type="button" id="btn-info" class="btn btn-info"><a href="http://localhost/toolia/brand/">Info</a></button>
         </div>
       </div>
       <div>
@@ -149,18 +167,17 @@ Template Name: About
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <button type="button" id="btn-info" class="btn btn-info">Info</button>
+            <button type="button" id="btn-info" class="btn btn-info"><a href="http://localhost/toolia/consult/">Info</a></button>
         </div>
       </div>
     </div>
   </div>
-  <div class="team">
-    <h2>MEET OUR TEAM</h2>
-    <p>
-      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker
-      including versions of Lorem Ipsum.
-    </p>
+<!--   <div id="our-words">
+<div>left</div>
+<div>right</div>
+  </div> -->
+  <div id="team">
+    <h2>We are Toolia</h2>
     <div class="team-toolia">
       <div class="profile-user">
         <div id="user-img">
@@ -217,9 +234,9 @@ Template Name: About
     </div>
   </div>
 
-  <div class="content">
+  <div id="content" class="content">
     <div class="m1">
-      <h1>Get in Touch</h1>
+      <h2>Get in Touch</h2>
     </div>
     <div class="container">
       <div class="row justify-content-center">
@@ -273,7 +290,7 @@ Template Name: About
                 <div class="col-md-8">
                   <textarea
                     class="form-control"
-                    placeholder="Leave a comment here"
+                    placeholder="Write your message"
                     id="floatingTextarea2"
                     style="height: 150px"
                   ></textarea>

@@ -21,7 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(./assets/banner.jpg);
+  background-image: url(./assets/work.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,18 +29,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #main {
   width: 100%;
-  height: 100vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   flex-direction: column;
-}
-
-#main-content {
-  background: rgb(255, 251, 251);
-  height: 40rem;
-  text-align: center;
   h1 {
     font-weight: lighter;
     font-size: 3.5rem;
@@ -48,7 +42,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   span {
     font-weight: 800;
   }
+
   .never {
+    font-weight: lighter;
+    color: #0feb9e;
+  }
+  .line {
     font-weight: lighter;
     color: #0feb9e;
   }
@@ -59,50 +58,83 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-weight: lighter;
     font-size: 1rem;
   }
-  .line {
-    font-weight: lighter;
-    color: #424d49;
+}
+
+#main-content {
+  background: #ffffff;
+  height: 40rem;
+  text-align: center;
+
+  h1 {
+    padding-top: 2rem;
+  }
+  .main-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    .desc-text {
+      width: 50%;
+    }
   }
 }
-.main-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-}
-.desc-text {
-  width: 60%;
-}
+
 .section-work {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  h3 {
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+  .card {
+    height: 20rem;
+    width: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .card-desc {
+      padding-top: 1rem;
+      width: 90%;
+    }
+    #btn-info {
+      width: 80%;
+    }
+  }
 }
 
-.card {
-  height: 20rem;
-  width: 15rem;
-  border-radius: 1rem;
+/* #our-words {
+  height: 30rem;
+  background: #0feb9e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > div {
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./assets/toolia.png);
+  }
+} */
+#team {
+  text-align: center;
+  height: 35rem;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.card-desc {
-  padding-top: 1rem;
-  width: 90%;
-}
-#btn-info {
-  width: 80%;
-}
-.team {
-  text-align: center;
-  height: 40rem;
-  background: #fffbfb;
 
   .team-toolia {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    max-width: 1320px;
 
     .profile-user {
       margin: 3rem;
@@ -137,15 +169,38 @@ Use it to make something cool, have fun, and share what you've learned with othe
     }
   }
 }
-.content {
-  background: #fffbfb;
+#content {
   .m1 {
     width: 100%;
     text-align: center;
   }
   form {
     width: 35rem;
-    border-right: 1px solid #000;
+    border-right: 1px solid #ced4da;
+    input {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0.5rem;
+      border-bottom: 1px solid #ced4da;
+      background: #e8fff7;
+    }
+
+    textarea {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0.5;
+      border-bottom: 1px solid #ced4da;
+      background: #e8fff7;
+    }
+    button {
+      background: #0feb9e;
+      border: none;
+    }
+    button:hover {
+      background: #09caf1;
+    }
   }
 }
 
