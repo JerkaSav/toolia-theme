@@ -37,6 +37,7 @@
             ?>
         </ol>
     </div>
+
 <?php endif; ?>
 <div class="container col-10">
     <?php comment_form($args = array('title_reply' => 'Leave a comment')); ?>
