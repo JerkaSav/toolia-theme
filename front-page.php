@@ -16,7 +16,7 @@
 ?>
         <div class="d-flex mt-5 mb-5 container">
             <div class="flex-grow-1">
-                <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b fp-h-top display-1"><?php echo $title ?></h1>
+                <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b fp-h-top display-2"><?php echo $title ?></h1>
                 <p class="text-wrap ps-sm-5 ms-sm-1 mt-4 fp-p-style" style="max-width: 40em;">
                     <?php echo $description; ?>
                 </p>
