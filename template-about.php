@@ -172,10 +172,6 @@ endif;
       </div>
     </div>
   </div>
-<!--   <div id="our-words">
-<div>left</div>
-<div>right</div>
-  </div> -->
   <div id="team">
     <h2>We are Toolia</h2>
     <div class="team-toolia">

@@ -16,23 +16,23 @@
 ?>
         <div class="d-flex mt-5 mb-5 container">
             <div class="flex-grow-1">
-                <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b"><?php echo $title ?></h1>
+                <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b fp-h-top display-2"><?php echo $title ?></h1>
                 <p class="text-wrap ps-sm-5 ms-sm-1 mt-4 fp-p-style" style="max-width: 40em;">
                     <?php echo $description; ?>
                 </p>
         </div>
-        <div class="d-none d-sm-block" style="width: 30em; height: 20em; margin-top: 15rem; margin-bottom: 4rem;" >
+        <div class="fp-img-container" style="width: 30em; height: 20em; margin-top: 15rem; margin-bottom: 4rem;" >
             <img class="img-fluid rounded-3 shadow" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
         </div> 
         </div>  
         <div class="container mt-5">
-            <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b">Cases</h1>
+            <h1 class="ps-sm-5 pt-sm-4 pb-sm-4 fp-h-b display-1">Cases</h1>
             <div class="row mt-5 mb-5">
                 <?php 
                 // The Loop
                 if ( $query->have_posts() ) : 
                 while( $query->have_posts() ) : $query->the_post(); ?>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-small-screen">
                         <a class="text-black" href="<?php echo the_permalink()?>" >
                         <div class="card fp-card card-has-bg click-col" 
                             style="background-image:url(<?php echo get_the_post_thumbnail_url()?>);">

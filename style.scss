@@ -89,7 +89,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
   .card {
     height: 20rem;
-    width: 25rem;
+    width: 15rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -103,24 +103,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     }
   }
 }
-
-/* #our-words {
-  height: 30rem;
-  background: #0feb9e;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  > div {
-    width: 30rem;
-    height: 20rem;
-    border: 1px solid darkblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(./assets/toolia.png);
-  }
-} */
 #team {
   text-align: center;
   height: 35rem;
