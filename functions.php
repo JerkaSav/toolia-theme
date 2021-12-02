@@ -19,7 +19,7 @@ if (!function_exists('themeSetup')) :
         register_nav_menus(
             array(
                 'primary-menu' => 'Main menu location',
-
+                'footer-menu' => 'Footer menu location',
             )
         );
     }
@@ -36,8 +36,11 @@ if (!defined('THEME_IMG_PATH')) {
 // Adds search box to nav menu programatically
 function add_search_box($items, $args)
 {
+    if( $args->theme_location == 'primary-menu') {
     $items .= '<li>' . get_search_form(false) . '</li>';
+}
     return $items;
+    
 }
 
 
@@ -76,6 +79,7 @@ function get_breadcrumb()
     }
 }
 
+
 function toolia_register_post_type()
 {
     $labels = array(
@@ -112,3 +116,26 @@ function toolia_register_post_type()
     register_post_type('job', $args);
 }
 add_action('init', 'toolia_register_post_type');
+
+function add_additional_class_on_a($classes, $item, $args)
+{
+    if (isset($args->add_a_class)) {
+        $classes['class'] = $args->add_a_class;
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+add_action( 'widgets_init', 'toolia_widgets_init' );
+function toolia_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Footer Text-area', 'toolia' ),
+        'id'            => 'footer-text-area',
+        'before_widget' => '<div class="col-md-4 mb-0 text-muted">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
+    ) );
+}
+
