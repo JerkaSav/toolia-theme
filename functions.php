@@ -77,6 +77,21 @@ function get_breadcrumb()
         // }
     }
 }
+function get_job_breadcrumb()
+{
+    echo '<a href="' . home_url() . '" rel="nofollow">Home</a>';
+    echo "<span class='crumb-separator'>&nbsp;&#187;&nbsp;</span>";
+    echo '<a href="' . get_permalink(87) . '" rel="nofollow">Career</a>';
+    if ('job' == get_post_type()) {
+        echo "<span class='crumb-separator'>&nbsp;&#187;&nbsp;</span>";
+        if (is_single()) {
+
+            echo "<span class='text-muted crumb-title text-capitalize'>" . get_post_type() . "</span>";
+            echo "<span class='crumb-separator'>&nbsp;&#187;&nbsp;</span>";
+            the_title("<span class='text-muted crumb-title'>", "</span>");
+        }
+    }
+}
 
 
 function toolia_register_post_type()
