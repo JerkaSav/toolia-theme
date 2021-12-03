@@ -15,6 +15,9 @@ $department = get_field('department');
 
 ?>
 <div class="d-flex container col-10 flex-column">
+    <div class="breadcrumb mt-5">
+        <?php get_job_breadcrumb() ?>
+    </div>
 
     <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5"><?php echo $job_title ?></h1>
 
