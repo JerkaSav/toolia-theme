@@ -5,7 +5,7 @@
      *      description (text area),
      *      frontpage_image (image),
      *      title2 (text),
-     *      category (Taxonomy (Category) with Radio Button),
+     *      category (Taxonomy: Category , Appearance: Radio Button, Return Value: Term Object),
      *      animations (true/false),
      * */ 
 
