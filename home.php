@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 
 <?php
-// TODO make sure the category ID corresponds to 'cases'
+$cases_slug = get_category_by_slug('cases');
+$cases_id = $cases_slug->term_id;
+// Make sure category slug for cases == 'cases'
 $args = array(
-    'category__not_in' => array(3),
-    // 'category_name' => 'cases'
+    'category__not_in' => array($cases_id),
+
 );
 $the_query = new WP_Query($args);
 ?>
