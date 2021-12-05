@@ -16,6 +16,8 @@ $the_query = new WP_Query($args); ?>
 <div class="container col-10 ">
     <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5"><?php the_title() ?></h1>
     <?php get_template_part('/includes/sections', 'content'); ?>
+    <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5">Latest jobs</h1>
+
     <div class="d-flex flex-column flex-md-row row">
         <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <div class="post-excerpt card mb-3 col-md-5 m-3" style="min-height: 200px;">
