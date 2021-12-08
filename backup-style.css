@@ -535,6 +535,7 @@ a {
 }
 .fp-img-container > img {
   max-height: 20em;
+  object-fit: cover;
 }
 .fp-h-b {
   background: linear-gradient(
