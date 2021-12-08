@@ -8,10 +8,12 @@ $contact_title = get_field('contact_title');
 $contact_text = get_field('contact_text');
 
 ?>
-<section class="container">
+<section class="container" id="contact-container">
+  <img id="hero-img-contact" src=" <?php echo $hero_img['sizes']['large']; ?>" alt="Hero image" class="img-fluid" />
   <div class="position-relative">
-    <img src="<?php echo $hero_img['sizes']['large']; ?>" alt="Hero image" class="img-fluid" />
-    <h2 class="text-center position-absolute bottom-0 w-100 text-light display-1"><?php the_title(); ?> </h2>
+    <h2 class="text-center position-absolute bottom-0 w-100 text-light display-1"><?php the_title();
+                                                                                  $hero_img['sizes']['large'] ?> </h2>
+
   </div>
 
   <div class="accordion mb-5" id="accordionExample">

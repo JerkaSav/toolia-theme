@@ -36,8 +36,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
   justify-content: center;
   color: #ffffff;
   flex-direction: column;
+  .sociala-icon {
+    width: 4rem;
+    display: flex;
+    justify-content: space-around;
+  }
   h1 {
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 3.5rem;
   }
   span {
@@ -90,18 +95,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
   .card {
     height: 20rem;
-    width: 15rem;
+    width: 25rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: rgba(15, 235, 158, 0.2);
+    border: none;
+    transition: 0.3s ease-in-out;
+
+    .card-logo {
+      width: 4rem;
+      height: 4rem;
+      opacity: 0.8;
+    }
     .card-desc {
       padding-top: 1rem;
       width: 90%;
+      height: 5rem;
     }
     #btn-info {
-      width: 80%;
+      width: 70%;
+      margin-top: 5rem;
+      a {
+        color: #ffffff;
+      }
     }
+  }
+  .card:hover {
+    transform: (scale(0.9));
   }
 }
 #team {
@@ -130,6 +152,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
       flex-direction: column;
       border: 1px solid #dfdfdf;
       padding-top: 1rem;
+      transition: 0.3s ease-in-out;
       #user-img {
         background: #dcdcdc;
         height: 10rem;
@@ -137,20 +160,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        border-radius: 1rem;
+        transition: 0.3s ease-in-out;
+        margin-top: 1rem;
         img {
           width: 7rem;
           height: 7rem;
           opacity: 0.4;
         }
       }
+      #user-img:hover {
+        transform: scale(0.9);
+      }
       h4 {
+        padding-top: 0.5rem;
         font-size: 1.5rem;
         font-weight: 400;
         font-style: normal;
       }
+      span {
+        font-weight: 500;
+        color: #757575;
+      }
     }
   }
+}
+.content {
+  background: #ffffff;
 }
 #content {
   .m1 {
@@ -222,4 +258,30 @@ a {
 
 #menu-primary-menu > li > a {
   color: black;
+}
+
+// kontakta-oss
+#contact-container {
+  #hero-img-contact {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #wpforms-61-field_2 {
+    max-width: 60%;
+  }
+}
+
+// cases
+
+#cases-container {
+  ul {
+    margin-left: 40%;
+  }
+  .case-card {
+    img {
+      min-height: 200px;
+    }
+  }
 }

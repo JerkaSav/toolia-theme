@@ -8,19 +8,43 @@ $img = get_field('case_img');
 $case_titel = get_field('case_titel');
 $text = get_field('case_text');
 $case_author = get_field('case_author');
+$case_helped_with = get_field('case_helped_with');
+$token = strtok($case_helped_with, ", ");
 ?>
 
 
 
-<section class="container">
+<section class="container" id="cases-container">
+  <div class="row w-100">
+    <div class="col-6 align-self-center mx-auto">
 
+      <ul class="list-unstyled">
+
+        <li>
+          ✨ 2532 projekt slutförda
+        </li>
+        <li>
+          ⭐ 201 sammarbeten
+        </li>
+        <li>
+          ✨ 15 år i branchen
+        </li>
+        <li>
+          ⭐ 3421 konsulter
+        </li>
+
+      </ul>
+    </div>
+    <div class="col-6">
+
+      <img class="img-fluid " src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+    </div>
+  </div>
   <?php if ($title) : ?>
     <h1 class="display-2 text-center mt-5"><?php echo $title; ?></h1>
   <?php else : ?>
     <h1 class="display-2 text-center mt-5">Uppdrag vi har gjort</h1>
   <?php endif; ?>
-
-
 
   <div class="mx-auto" style="max-width: 40rem;">
     <p class="mb-5"><?php get_template_part('/includes/sections', 'content'); ?></p>
@@ -36,9 +60,9 @@ $case_author = get_field('case_author');
 
     <!-- the loop -->
 
-    <div class="row justify-content-between my-5">
+    <div class="row justify-content-around my-5">
       <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <div class="card shadow-lg border-0" style="width: 18rem;">
+        <div class="card shadow-lg border-0 mt-5" style="width: 18rem;">
           <div class="card-body ">
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
             <h5 class="card-title"><?php the_title(); ?> </h5>
@@ -60,7 +84,7 @@ $case_author = get_field('case_author');
     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
   <?php endif; ?>
 
-  <div class="card mb-3 mx-auto shadow-lg border-0" style="">
+  <div class="card mb-3 mx-auto shadow-lg border-0" style="margin-top: 6rem">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="<?php echo $img['sizes']['large']; ?>" class="img-fluid rounded-start" alt="">
@@ -72,7 +96,13 @@ $case_author = get_field('case_author');
           <p class="card-text"><small class="text-muted"><?php echo $case_author ?></small></p>
 
         </div>
-        <div class="card-footer bg-transparent shadow-sm border-0 color-succes">Ökad försäljning - Google Ads - SEO - Wordpress</div>
+
+        <div class=" rounded card-footer bg-transparent  border-0 color-succes"><?php
+                                                                                while ($token !== false) {
+                                                                                  echo "✔️ $token ";
+                                                                                  $token = strtok(", ");
+                                                                                }
+                                                                                ?></div>
       </div>
     </div>
   </div>
