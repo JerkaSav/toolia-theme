@@ -16,7 +16,7 @@
       "theme_location" => "footer-menu",
       "container"      => "",
       "menu_class"     => "nav col-md-4 justify-content-end", 
-      "before"         => '<li href="#" class="nav-item">',
+      "before"         => '<li class="nav-item">',
       "after"          => "</li>",
       "add_a_class"    => "nav-link px-2 text-muted",
       ) 

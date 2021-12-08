@@ -3,10 +3,10 @@
 
 /**
  * advanced custom fields needed for custom post-type 'job'
- * job_title
- * job_description
- * location
- * department
+ * job_title (text)
+ * job_description (WYSIWIG editor)
+ * location (text)
+ * department (select)
  */
 $job_title = get_field('job_title');
 $job_description = get_field('job_description');
