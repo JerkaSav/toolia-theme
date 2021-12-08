@@ -534,8 +534,8 @@ a {
   margin-left: 2rem;
 }
 .fp-img-container > img {
-  max-height: 20em;
-  object-fit: cover;
+  background: transparent;
+  border: none;
 }
 .fp-h-b {
   background: linear-gradient(

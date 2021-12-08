@@ -30,7 +30,7 @@
                 </p>
         </div>
         <div class="fp-img-container<?php echo ($animations) ? ' animate' : ''?>" >
-            <img class="img-fluid rounded-3 shadow" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
+            <img class="img-thumbnail rounded-3" src=<?php echo $image["url"] ?> alt=<?php echo $image["name"] ?> />
         </div> 
         </div>  
         <div class="container mt-5">
