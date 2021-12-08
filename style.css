@@ -297,4 +297,23 @@ a {
 #menu-primary-menu > li > a {
   color: black;
 }
+
+#contact-container #hero-img-contact {
+  max-height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#contact-container #wpforms-61-field_2 {
+  max-width: 60%;
+}
+
+#cases-container ul {
+  margin-left: 40%;
+}
+
+#cases-container .case-card img {
+  min-height: 200px;
+}
 /*# sourceMappingURL=style.css.map */

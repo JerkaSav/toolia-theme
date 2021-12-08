@@ -223,3 +223,29 @@ a {
 #menu-primary-menu > li > a {
   color: black;
 }
+
+// kontakta-oss
+#contact-container {
+  #hero-img-contact {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #wpforms-61-field_2 {
+    max-width: 60%;
+  }
+}
+
+// cases
+
+#cases-container {
+  ul {
+    margin-left: 40%;
+  }
+  .case-card {
+    img {
+      min-height: 200px;
+    }
+  }
+}

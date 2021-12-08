@@ -108,7 +108,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   justify-content: space-around;
 }
 
-.card:not(.fp-card, .post-excerpt) {
+/* .card:not(.fp-card, .post-excerpt) {
   height: 20rem;
   width: 15rem;
   border-radius: 1rem;
@@ -122,7 +122,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
+} */
 
 .card-desc {
   padding-top: 1rem;
@@ -550,7 +550,7 @@ a {
   max-width: 40em;
 }
 .fp-p-style::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 110%;
   width: 1px;
@@ -574,7 +574,7 @@ a {
   background-position: center center;
 }
 .card-has-bg:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
