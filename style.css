@@ -46,8 +46,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
           flex-direction: column;
 }
 
+#main .sociala-icon {
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 #main h1 {
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 3.5rem;
 }
 
@@ -119,7 +128,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .section-work .card {
   height: 20rem;
-  width: 15rem;
+  width: 25rem;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,15 +140,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: rgba(15, 235, 158, 0.2);
+  border: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section-work .card .card-logo {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.8;
 }
 
 .section-work .card .card-desc {
   padding-top: 1rem;
   width: 90%;
+  height: 5rem;
 }
 
 .section-work .card #btn-info {
-  width: 80%;
+  width: 70%;
+  margin-top: 5rem;
+}
+
+.section-work .card #btn-info a {
+  color: #ffffff;
+}
+
+.section-work .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #team {
@@ -190,6 +220,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
           flex-direction: column;
   border: 1px solid #dfdfdf;
   padding-top: 1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #team .team-toolia .profile-user #user-img {
@@ -205,7 +237,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 50%;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-top: 1rem;
 }
 
 #team .team-toolia .profile-user #user-img img {
@@ -214,10 +249,25 @@ Use it to make something cool, have fun, and share what you've learned with othe
   opacity: 0.4;
 }
 
+#team .team-toolia .profile-user #user-img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 #team .team-toolia .profile-user h4 {
+  padding-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   font-style: normal;
+}
+
+#team .team-toolia .profile-user span {
+  font-weight: 500;
+  color: #757575;
+}
+
+.content {
+  background: #ffffff;
 }
 
 #content .m1 {
