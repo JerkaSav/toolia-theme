@@ -1,25 +1,10 @@
-<?php
-/*
-Template Name: Job
-*/
-?>
+<?php get_header(); ?>
 
-<?php get_header() ?>
-<?php
-
-$args = array(
-    'post_type' => 'job',
-    'posts_per_page' => 4
-);
-$the_query = new WP_Query($args); ?>
-
-<div class="container col-10 ">
-    <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5"><?php the_title() ?></h1>
-    <?php get_template_part('/includes/sections', 'content'); ?>
-    <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5">Latest jobs</h1>
+<div class="container-md">
+    <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5">Available positions</h1>
 
     <div class="d-flex flex-column flex-md-row row">
-        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="post-excerpt card mb-3 col-md-5 m-3" style="min-height: 200px;">
                     <div class="card-body">
                         <h1 class="card-title blog-post-title"><a href="<?php echo the_permalink(); ?>"><?php the_title() ?> </a></h1>
@@ -41,12 +26,6 @@ $the_query = new WP_Query($args); ?>
 
         <?php endif; ?>
     </div>
-    <a href="<?php echo get_post_type_archive_link('job') ?>"><button class="btn btn-outline-secondary rounded-pill" role="button">See all available positions</button></a>
 </div>
-
-
-
-
-
 
 <?php get_footer() ?>
