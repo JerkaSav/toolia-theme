@@ -1,5 +1,8 @@
 <?php
-get_header(); 
+/*
+Template Name: About us
+*/
+get_header();
 $textvy = get_field('brandingtext');
 $icone = get_field('brandingicon');
 $develop = get_field('developicon');
@@ -18,14 +21,8 @@ $consulttext = get_field('consulttext');
       <span class="line">___</span>
     </h4>
     <div class="sociala-icon">
-      <img
-        src="<?php echo THEME_IMG_PATH . '/instagram.svg'; ?>"
-        alt="instagram"
-      />
-      <img
-        src="<?php echo THEME_IMG_PATH . '/facebook.svg'; ?>"
-        alt="facebook"
-      />
+      <img src="<?php echo THEME_IMG_PATH . '/instagram.svg'; ?>" alt="instagram" />
+      <img src="<?php echo THEME_IMG_PATH . '/facebook.svg'; ?>" alt="facebook" />
       <img src="<?php echo THEME_IMG_PATH . '/twitter.svg'; ?>" alt="twitter" />
     </div>
   </div>
@@ -48,50 +45,38 @@ $consulttext = get_field('consulttext');
       <div>
         <h3>Development</h3>
         <div class="card">
-          <img
-            class="card-logo"
-            src=" <?php echo $develop['url'];?>"
-            alt="icon"
-          />
+          <img class="card-logo" src=" <?php echo $develop['url']; ?>" alt="icon" />
 
           <p class="card-desc">
             <?php echo $developtext ?>
           </p>
 
           <button type="button" id="btn-info" class="btn btn-info">
-            <a href="http://localhost/toolia/develop/">Development</a>
+            <a href="<?php echo get_permalink(get_page_by_path('develop')); ?>">Development</a>
           </button>
         </div>
       </div>
       <div>
         <h3>Branding</h3>
         <div class="card">
-          <img
-            class="card-logo"
-            src=" <?php echo $icone['url'];?>"
-            alt="icon"
-          />
+          <img class="card-logo" src=" <?php echo $icone['url']; ?>" alt="icon" />
           <p class="card-desc">
             <?php echo $textvy ?>
           </p>
           <button type="button" id="btn-info" class="btn btn-info">
-            <a href="http://localhost/toolia/brand/">Branding</a>
+            <a href="<?php echo get_permalink(get_page_by_path('brand')); ?>">Branding</a>
           </button>
         </div>
       </div>
       <div>
         <h3>Consultning</h3>
         <div class="card">
-          <img
-            class="card-logo"
-            src=" <?php echo $consult['url'];?>"
-            alt="icon"
-          />
+          <img class="card-logo" src=" <?php echo $consult['url']; ?>" alt="icon" />
           <p class="card-desc">
             <?php echo $consulttext ?>
           </p>
           <button type="button" id="btn-info" class="btn btn-info">
-            <a href="http://localhost/toolia/consult/">Consultning</a>
+            <a href="<?php echo get_permalink(get_page_by_path('konsult')); ?>">Consultning</a>
           </button>
         </div>
       </div>
@@ -103,10 +88,7 @@ $consulttext = get_field('consulttext');
       <div class="profile-user">
         <div id="user-img">
           <a href="https://github.com/ThomasLaukkanen">
-            <img
-              src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
-              alt="toolia logo"
-            />
+            <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
           </a>
         </div>
         <h4>Thomas</h4>
@@ -115,10 +97,7 @@ $consulttext = get_field('consulttext');
       <div class="profile-user">
         <div id="user-img">
           <a href="https://github.com/JerkaSav">
-            <img
-              src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
-              alt="toolia logo"
-            />
+            <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
           </a>
         </div>
         <h4>Eric</h4>
@@ -127,10 +106,7 @@ $consulttext = get_field('consulttext');
       <div class="profile-user">
         <div id="user-img">
           <a href="https://github.com/Gremlet">
-            <img
-              src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
-              alt="toolia logo"
-            />
+            <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
           </a>
         </div>
         <h4>Ann</h4>
@@ -138,10 +114,7 @@ $consulttext = get_field('consulttext');
       </div>
       <div class="profile-user">
         <div id="user-img">
-          <img
-            src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
-            alt="toolia logo"
-          />
+          <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
         </div>
         <h4>MohammadAli</h4>
         <span>Developer</span>
@@ -162,65 +135,33 @@ $consulttext = get_field('consulttext');
                 Fill the form. <br />
                 It's easy.
               </h2>
-              <?php if(!empty($statusMsg)){ ?>
-              <div class="status-msg <?php echo $status; ?>">
-                <?php echo $statusMsg; ?>
-              </div>
+              <?php if (!empty($statusMsg)) { ?>
+                <div class="status-msg <?php echo $status; ?>">
+                  <?php echo $statusMsg; ?>
+                </div>
               <?php } ?>
               <form class="row g-3" action="template-about.php" method="POST">
                 <div class="col-md-4">
-                  <label for="validationServer01" class="form-label"
-                    >First name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="name"
-                    required
-                  />
+                  <label for="validationServer01" class="form-label">First name</label>
+                  <input type="text" class="form-control" name="name" required />
                 </div>
                 <div class="col-md-4">
-                  <label for="validationServer02" class="form-label"
-                    >Last name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="LastName"
-                    required
-                  />
+                  <label for="validationServer02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" name="LastName" required />
                 </div>
 
                 <div class="col-md-8">
-                  <label for="validationCustomEmail" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="email"
-                    aria-describedby="validationServer03Feedback"
-                    required
-                  />
+                  <label for="validationCustomEmail" class="form-label">Email</label>
+                  <input type="text" class="form-control" name="email" aria-describedby="validationServer03Feedback" required />
                 </div>
 
                 <div class="col-md-8">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    placeholder="Write your message"
-                    style="height: 150px"
-                  >
+                  <textarea name="message" class="form-control" placeholder="Write your message" style="height: 150px">
                   </textarea>
                 </div>
 
                 <div class="col-12">
-                  <button
-                    class="btn btn-primary"
-                    type="submit"
-                    value="Submit"
-                    name="submit"
-                  >
+                  <button class="btn btn-primary" type="submit" value="Submit" name="submit">
                     Submit form
                   </button>
                 </div>
@@ -242,6 +183,6 @@ $consulttext = get_field('consulttext');
   </div>
 
   <?php
-get_footer();
-?>
+  get_footer();
+  ?>
 </div>
