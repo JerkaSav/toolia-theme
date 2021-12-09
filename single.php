@@ -12,10 +12,7 @@
         <em>on</em>
         <span class="author-meta-span"><?php echo get_the_date() ?></span>
     </p>
-    <div class="blog-post-img-wrapper">
-        <?php the_post_thumbnail('medium'); ?>
-    </div>
-
+    <img class="fluid mx-auto" src="<?php the_post_thumbnail_url('large') ?>" alt="">
     <p><?php get_template_part('/includes/sections', 'content'); ?> </p>
 </div>
 
