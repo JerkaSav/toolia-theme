@@ -62,7 +62,7 @@ $token = strtok($case_helped_with, ", ");
 
     <div class="row justify-content-around my-5">
       <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <div class="card shadow-lg border-0 mt-5" style="width: 18rem;">
+        <div class="card shadow-lg border-0 mt-5 case-card" style="width: 18rem;">
           <div class="card-body ">
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
             <h5 class="card-title"><?php the_title(); ?> </h5>
