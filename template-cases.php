@@ -16,26 +16,26 @@ $token = strtok($case_helped_with, ", ");
 
 <section class="container" id="cases-container">
   <div class="row w-100">
-    <div class="col-6 align-self-center mx-auto">
+    <div class="col-6 align-self-center">
 
-      <ul class="list-unstyled">
+      <ul class="list-unstyled ">
 
-        <li>
-          ✨ 2532 projekt slutförda
+        <li class="fs-4">
+          ✨ 5433 Projects completed
         </li>
-        <li>
-          ⭐ 201 sammarbeten
+        <li class="fs-4">
+          ⭐ 201 Collaborations
         </li>
-        <li>
-          ✨ 15 år i branchen
+        <li class="fs-4">
+          ✨ 15 Years in the industry
         </li>
-        <li>
-          ⭐ 3421 konsulter
+        <li class="fs-4">
+          ⭐ 3421 Consultants
         </li>
 
       </ul>
     </div>
-    <div class="col-6">
+    <div class=" col-6">
 
       <img class="img-fluid " src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
     </div>
@@ -62,9 +62,9 @@ $token = strtok($case_helped_with, ", ");
 
     <div class="row justify-content-around my-5">
       <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <div class="card shadow-lg border-0 mt-5" style="width: 18rem;">
-          <div class="card-body ">
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
+        <div class="card shadow-lg border-0 mt-5 " style="width: 18rem;">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="..." style="max-height: 200px; height:100%; object-fit:contain;">
+          <div class="card-body column justify-content-between ">
             <h5 class="card-title"><?php the_title(); ?> </h5>
             <p class="card-text"><?php the_excerpt(); ?></p>
             <a href="<?php echo the_permalink(); ?>" class="card-link">Läs mer</a>

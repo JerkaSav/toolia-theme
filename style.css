@@ -354,10 +354,33 @@ a {
 }
 
 #cases-container ul {
-  margin-left: 40%;
+  margin-left: 25%;
+  animation: floater alternate-reverse infinite 2.5s ease-in-out;
 }
 
 #cases-container .case-card img {
   min-height: 200px;
+}
+
+@-webkit-keyframes floater {
+  from {
+    -webkit-transform: translate3d(0px, 5px, 10px);
+            transform: translate3d(0px, 5px, 10px);
+  }
+  to {
+    -webkit-transform: translate3d(0px, -5px, 0px);
+            transform: translate3d(0px, -5px, 0px);
+  }
+}
+
+@keyframes floater {
+  from {
+    -webkit-transform: translate3d(0px, 5px, 10px);
+            transform: translate3d(0px, 5px, 10px);
+  }
+  to {
+    -webkit-transform: translate3d(0px, -5px, 0px);
+            transform: translate3d(0px, -5px, 0px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

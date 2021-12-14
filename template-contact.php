@@ -20,36 +20,35 @@ $contact_text = get_field('contact_text');
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Jag vill boka in ett möte med er, Hur gör jag?
+          I want to schedule a meeting with you, how do I do it?
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Fyll i formuläret med dina kontakt uppgifter så konkaktar vi dig så fort som möjligt.
+          Fill out the form with your contact details and we will contact you as soon as possible.
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Vilka tjänster kan era konsulter hjälpa oss med?
+          What services can your consultants help us with?
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Våra konsulter är fullstack utvecklare och klarar av alla slags uppdrag. Om det är ett nytt programerings språk som vi inte är vana att använda, då går konsulten på en utbildning innan uppdraget för att ha dom senaste kunskaperna. Några ramverk som vi är experter på inom frontend är Vue, React, Svelte och Angular. Inom backendutveckling är vi extra vassa på node-js(express.js),Apache, Django och dom vanligaste noSql och Sql databaserna.
+          Our consultants are full stack developers and can handle all kinds of assignments. If it is a new programming language that we are not used to using, then the consultant goes on a training course before the assignment to have the latest knowledge. Some frameworks that we are experts in frontend are Vue, React, Svelte and Angular. In backend development, we are extra sharp on node-js(express.js), Apache, Django and the most common noSql and Sql databases.
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Vilka programeringsspråk kan ni?
-        </button>
+          What programming languages do you know? </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Javascript, PHP, Python, C++, C#, Java, Kotlin och Rust.
+          Javascript, PHP, Python, C++, C#, Java, Kotlin and Rust.
         </div>
       </div>
     </div>

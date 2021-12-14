@@ -273,11 +273,21 @@ a {
 
 #cases-container {
   ul {
-    margin-left: 40%;
+    margin-left: 25%;
+    animation: floater alternate-reverse infinite 2.5s ease-in-out;
   }
   .case-card {
     img {
       min-height: 200px;
     }
+  }
+}
+
+@keyframes floater {
+  from {
+    transform: translate3d(0px, 5px, 10px);
+  }
+  to {
+    transform: translate3d(0px, -5px, -0px);
   }
 }
