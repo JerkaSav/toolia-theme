@@ -135,37 +135,7 @@ $consulttext = get_field('consulttext');
                 Fill the form. <br />
                 It's easy.
               </h2>
-              <?php if (!empty($statusMsg)) { ?>
-                <div class="status-msg <?php echo $status; ?>">
-                  <?php echo $statusMsg; ?>
-                </div>
-              <?php } ?>
-              <form class="row g-3" action="template-about.php" method="POST">
-                <div class="col-md-4">
-                  <label for="validationServer01" class="form-label">First name</label>
-                  <input type="text" class="form-control" name="name" required />
-                </div>
-                <div class="col-md-4">
-                  <label for="validationServer02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" name="LastName" required />
-                </div>
-
-                <div class="col-md-8">
-                  <label for="validationCustomEmail" class="form-label">Email</label>
-                  <input type="text" class="form-control" name="email" aria-describedby="validationServer03Feedback" required />
-                </div>
-
-                <div class="col-md-8">
-                  <textarea name="message" class="form-control" placeholder="Write your message" style="height: 150px">
-                  </textarea>
-                </div>
-
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit" value="Submit" name="submit">
-                    Submit form
-                  </button>
-                </div>
-              </form>
+              <?php if (function_exists('ninja_forms_display_form')) ninja_forms_display_form(1); ?>
             </div>
             <div class="col-lg-4 ml-auto">
               <h3 class="mb-4">Let's talk about everything.</h3>

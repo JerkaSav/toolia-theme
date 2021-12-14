@@ -165,7 +165,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .section-work .card #btn-info a {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .section-work .card:hover {
@@ -279,6 +279,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #content form {
   width: 35rem;
   border-right: 1px solid #ced4da;
+  padding-right: 5rem;
 }
 
 #content form input {
@@ -288,6 +289,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-radius: 0.5rem;
   border-bottom: 1px solid #ced4da;
   background: #e8fff7;
+  color: #757575;
 }
 
 #content form textarea {
@@ -297,15 +299,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-radius: 0.5;
   border-bottom: 1px solid #ced4da;
   background: #e8fff7;
-}
-
-#content form button {
-  background: #0feb9e;
-  border: none;
-}
-
-#content form button:hover {
-  background: #09caf1;
 }
 
 /* CSS reset */
