@@ -15,7 +15,11 @@ $the_query = new WP_Query($args); ?>
 
 <div class="container col-10 ">
     <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5"><?php the_title() ?></h1>
-    <?php get_template_part('/includes/sections', 'content'); ?>
+    <img style="width: 80%" class="fluid mx-auto" src="<?php the_post_thumbnail_url() ?>" alt="">
+    <div class="mt-3 container col-10">
+        <?php get_template_part('/includes/sections', 'content'); ?>
+
+    </div>
     <h1 class="fp-h-b ps-sm-5 pt-sm-4 pb-sm-4 my-5">Latest jobs</h1>
 
     <div class="d-flex flex-column flex-md-row row">
@@ -41,7 +45,7 @@ $the_query = new WP_Query($args); ?>
 
         <?php endif; ?>
     </div>
-    <a href="<?php echo get_post_type_archive_link('job') ?>"><button class="btn btn-outline-secondary rounded-pill" role="button">See all available positions</button></a>
+    <a href="<?php echo get_post_type_archive_link('job') ?>"><button class="btn btn-outline-secondary rounded-pill my-3" role="button">See all available positions</button></a>
 </div>
 
 
