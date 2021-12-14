@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <?php $author_id = get_post_field('post_author')  ?>
 
-<div class="container col-10">
+<div class="container-md">
     <div class="breadcrumb mt-5">
         <?php get_breadcrumb() ?>
     </div>
@@ -12,11 +12,10 @@
         <em>on</em>
         <span class="author-meta-span"><?php echo get_the_date() ?></span>
     </p>
-    <div class="blog-post-img-wrapper">
-        <?php the_post_thumbnail('medium'); ?>
+    <img class="fluid mx-auto" src="<?php the_post_thumbnail_url('medium') ?>" alt="">
+    <div class="col-12 col-lg-8 container">
+        <p><?php get_template_part('/includes/sections', 'content'); ?> </p>
     </div>
-
-    <p><?php get_template_part('/includes/sections', 'content'); ?> </p>
 </div>
 
 <?php if (comments_open() || get_comments_number()) : comments_template() ?>
