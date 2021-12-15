@@ -3,6 +3,7 @@
 Template Name: About us
 */
 get_header();
+$maintext = get_field('maintext');
 $textvy = get_field('brandingtext');
 $icone = get_field('brandingicon');
 $develop = get_field('developicon');
@@ -21,9 +22,23 @@ $consulttext = get_field('consulttext');
       <span class="line">___</span>
     </h4>
     <div class="sociala-icon">
-      <img src="<?php echo THEME_IMG_PATH . '/instagram.svg'; ?>" alt="instagram" />
-      <img src="<?php echo THEME_IMG_PATH . '/facebook.svg'; ?>" alt="facebook" />
-      <img src="<?php echo THEME_IMG_PATH . '/twitter.svg'; ?>" alt="twitter" />
+      <a href="https://www.instagram.com/">
+        <img
+          src="<?php echo THEME_IMG_PATH . '/instagram.svg'; ?>"
+          alt="instagram"
+        />
+      </a>
+      <a href="https://www.facebook.com/">
+        <img
+          src="<?php echo THEME_IMG_PATH . '/facebook.svg'; ?>"
+          alt="facebook"
+      /></a>
+      <a href="https://www.twitter.com/">
+        <img
+          src="<?php echo THEME_IMG_PATH . '/twitter.svg'; ?>"
+          alt="twitter"
+        />
+      </a>
     </div>
   </div>
   <div id="main-content" class="container-fluid">
@@ -31,52 +46,64 @@ $consulttext = get_field('consulttext');
 
     <div class="main-description">
       <p class="desc-text">
-        survived not only five centuries, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised in the
-        1960s with the release of Letraset sheets containing Lorem Ipsum
-        passages, and more recently with desktop publishing software like Aldus
-        PageMaker including versions of Lorem Ipsum.
+          <?php echo $maintext ?>
       </p>
     </div>
-
-    <!--  -->
 
     <div class="section-work">
       <div>
         <h3>Development</h3>
         <div class="card">
-          <img class="card-logo" src=" <?php echo $develop['url']; ?>" alt="icon" />
+          <img
+            class="card-logo"
+            src=" <?php echo $develop['url']; ?>"
+            alt="icon"
+          />
 
           <p class="card-desc">
             <?php echo $developtext ?>
           </p>
 
           <button type="button" id="btn-info" class="btn btn-info">
-            <a href="<?php echo get_permalink(get_page_by_path('develop')); ?>">Development</a>
+            <a href="<?php echo get_permalink(get_page_by_path('develop')); ?>"
+              >Development</a
+            >
           </button>
         </div>
       </div>
       <div>
         <h3>Branding</h3>
         <div class="card">
-          <img class="card-logo" src=" <?php echo $icone['url']; ?>" alt="icon" />
+          <img
+            class="card-logo"
+            src=" <?php echo $icone['url']; ?>"
+            alt="icon"
+          />
           <p class="card-desc">
             <?php echo $textvy ?>
           </p>
           <button type="button" id="btn-info" class="btn btn-info">
-            <a href="<?php echo get_permalink(get_page_by_path('brand')); ?>">Branding</a>
+            <a href="<?php echo get_permalink(get_page_by_path('brand')); ?>"
+              >Branding</a
+            >
           </button>
         </div>
       </div>
       <div>
         <h3>Consultning</h3>
         <div class="card">
-          <img class="card-logo" src=" <?php echo $consult['url']; ?>" alt="icon" />
+          <img
+            class="card-logo"
+            src=" <?php echo $consult['url']; ?>"
+            alt="icon"
+          />
           <p class="card-desc">
             <?php echo $consulttext ?>
           </p>
           <button type="button" id="btn-info" class="btn btn-info">
-            <a href="<?php echo get_permalink(get_page_by_path('konsult')); ?>">Consultning</a>
+            <a href="<?php echo get_permalink(get_page_by_path('konsult')); ?>"
+              >Consultning</a
+            >
           </button>
         </div>
       </div>
@@ -88,7 +115,10 @@ $consulttext = get_field('consulttext');
       <div class="profile-user">
         <div id="user-img">
           <a href="https://github.com/ThomasLaukkanen">
-            <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
+            <img
+              src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+              alt="toolia logo"
+            />
           </a>
         </div>
         <h4>Thomas</h4>
@@ -97,7 +127,10 @@ $consulttext = get_field('consulttext');
       <div class="profile-user">
         <div id="user-img">
           <a href="https://github.com/JerkaSav">
-            <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
+            <img
+              src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+              alt="toolia logo"
+            />
           </a>
         </div>
         <h4>Eric</h4>
@@ -106,7 +139,10 @@ $consulttext = get_field('consulttext');
       <div class="profile-user">
         <div id="user-img">
           <a href="https://github.com/Gremlet">
-            <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
+            <img
+              src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+              alt="toolia logo"
+            />
           </a>
         </div>
         <h4>Ann</h4>
@@ -114,7 +150,10 @@ $consulttext = get_field('consulttext');
       </div>
       <div class="profile-user">
         <div id="user-img">
-          <img src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>" alt="toolia logo" />
+          <img
+            src="<?php echo THEME_IMG_PATH . '/user-solid.svg'; ?>"
+            alt="toolia logo"
+          />
         </div>
         <h4>MohammadAli</h4>
         <span>Developer</span>

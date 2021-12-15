@@ -144,6 +144,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border: none;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .section-work .card .card-logo {
@@ -223,6 +225,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding-top: 1rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #team .team-toolia .profile-user #user-img {
