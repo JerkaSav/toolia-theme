@@ -12,7 +12,7 @@
         <em>on</em>
         <span class="author-meta-span"><?php echo get_the_date() ?></span>
     </p>
-    <img class="fluid mx-auto" src="<?php the_post_thumbnail_url('medium') ?>" alt="">
+    <img style="width: 80%" class="fluid mx-auto" src="<?php the_post_thumbnail_url() ?>" alt="">
     <div class="col-12 col-lg-8 container">
         <p><?php get_template_part('/includes/sections', 'content'); ?> </p>
     </div>
