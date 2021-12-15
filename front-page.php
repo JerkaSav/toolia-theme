@@ -51,7 +51,6 @@
                             alt="<?php echo str_replace(' ', '-', get_the_title()) . "-img"  ?>">
                             <div class="card-img-overlay d-flex flex-column">
                                 <div class="card-body">
-                                    <small class="card-meta mb-2"> <?php echo get_the_excerpt(); ?></small>
                                     <h4 class="card-title mt-0 display-4"><?php the_title(); ?></h4>
                                 </div>
                             </div>
@@ -76,8 +75,8 @@
                             alt="<?php echo str_replace(' ', '-', get_the_title()) . "-img"  ?>">
                             <div class="card-img-overlay d-flex flex-column">
                                 <div class="card-body">
+                                <h4 class="card-title mt-0 display-4"><?php the_title(); ?></h4>
                                     <small class="card-meta mb-2"> <?php echo get_the_excerpt(); ?></small>
-                                    <h4 class="card-title mt-0 display-4"><?php the_title(); ?></h4>
                                 </div>
                             </div>
                         </div>
